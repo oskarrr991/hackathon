@@ -24,7 +24,7 @@ import {RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
   {path: '', redirectTo: 'main', pathMatch: 'full'},
   {path: 'main', component: MainComponent}
-  ];
+];
 
 @NgModule({
   declarations: [
@@ -33,8 +33,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    /*AppRoutingModule,*/
-    RouterModule.forRoot(routes),
+    AppRoutingModule,
+    // RouterModule.forRoot(routes),
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
