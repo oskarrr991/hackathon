@@ -16,7 +16,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.testService.getTestString().subscribe(response => {
-      console.log(response.FirstName);
+      console.log('First name: ' + response.FirstName);
       this.username = response.FirstName;
     });
   }
